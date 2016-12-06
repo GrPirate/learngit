@@ -23,3 +23,13 @@ git checkout -- <file> 撤销上一次修改，有两种情况：
 2.<file>已经添加到了暂存区后，再次修改了文件，撤销修改就回到添加到暂存区后的状态
 
 git rm <file> 从版本库中删除该文件，并使用git commit
+
+创建SSH Key：
+ssh-keygen -t rsa -C "youremail@example.com"
+
+要关联一个远程库，使用命令：
+git remote add origin git@server-name:path/repo-name.git
+关联后第一次推送master分支所有内容使用命令：
+git push -u origin master
+此后，每次本地提交后想要推送最新修改就可以使用命令：
+git push origin master
