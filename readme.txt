@@ -6,3 +6,4 @@ My stupid boss still prefers SVN.
 Creating a new branch is quick.
 I'm back!!!
 Creating a new branch is quick and simple.
+learn git merge --no-ff.
