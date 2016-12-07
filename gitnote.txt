@@ -33,3 +33,5 @@ git remote add origin git@server-name:path/repo-name.git
 git push -u origin master
 此后，每次本地提交后想要推送最新修改就可以使用命令：
 git push origin master
+
+分支管理：
