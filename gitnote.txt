@@ -47,3 +47,11 @@ git log --graph --pretty=oneline --abbrev-commit
 
 git merge --no-ff -m "xxx" <branchname>
 合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+
+git stash 将当前工作现场（已添加，未提交）"储藏起来"，以便建立新的分支
+git stash list 查看所储存的工作现场
+git stash apply 当新的分支工作完成并提交合并后，恢复工作现场并继续到原来的分支工作
+git stash drop 删除stash内容
+git stash pop 恢复并删除stash内容
+
+git branch -D <branchname> 强行删除一个没有被合并过的分支
